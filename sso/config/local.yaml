@@ -1,5 +1,5 @@
 env: "local" #dev, prod
-storage_path: "./storage/sso.db"
+storage_path: "/home/raccoonpc/Dev/oss/grpc-auth-service/sso/storage/sso.db"
 token_ttl: 1h
 grpc:
   port: 44044

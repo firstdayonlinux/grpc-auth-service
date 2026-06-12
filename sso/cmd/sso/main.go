@@ -28,7 +28,9 @@ func main() {
 
 	signal.Notify(stop, syscall.SIGTERM, syscall.SIGINT)
 
-	<-stop
+	sign := <-stop
+
+	log.Info("stoppoing application", slog.String("signal", sign.String()))
 
 	application.GRPCSrv.Stop()
 
